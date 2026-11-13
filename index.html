@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaishnavi Mohe — AI & Data Science Developer</title>
-<meta name="description" content="Portfolio of Vaishnavi Mohe — AI & Data Science student, Web Developer and Data Analyst from Mumbai, India.">
+<title>Vaishnavi Mohe — Backend & Full-Stack Developer & UI/UX Designer</title>
+<meta name="description" content="Portfolio of Vaishnavi Mohe — Backend & Full-Stack Developer and UI/UX Designer. REST APIs in Python/FastAPI, ML/LLM integration, Docker and user-first Figma interfaces. Mumbai, India.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -150,6 +150,7 @@
 
   /* SKILLS */
   .skills-wrap{background:var(--navy-deep);border-radius:24px;padding:56px 48px;}
+  .skills-wrap h2{color:var(--paper);}
   .skills-wrap .section-head h2, .skills-wrap .eyebrow{color:var(--paper);}
   .skills-wrap .eyebrow{color:var(--gold);}
   .skill-cat{margin-bottom:30px;}
@@ -188,6 +189,17 @@
   .proj-top h3{font-size:24px;font-weight:600;}
   .proj-year{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--gold);border:1px solid var(--gold);padding:5px 12px;border-radius:20px;font-weight:600;white-space:nowrap;}
   .proj-card p{color:var(--slate);font-size:15.5px;margin-bottom:20px;}
+  .proj-card ul{list-style:none;margin:0 0 22px;}
+  .proj-card li{position:relative;padding-left:20px;color:var(--slate);font-size:15.5px;margin-bottom:8px;}
+  .proj-card li::before{content:"—";position:absolute;left:0;color:var(--gold);font-weight:700;}
+  .proj-card strong{color:var(--navy-deep);}
+  .proj-link{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;
+    color:var(--navy);border-bottom:1.5px solid var(--gold);
+    padding-bottom:2px;margin-bottom:20px;letter-spacing:.02em;
+  }
+  .proj-link:hover{color:var(--gold);}
   .proj-card .chip-row .chip{color:var(--navy);border-color:var(--navy);background:transparent;font-size:13px;padding:6px 13px;}
   .proj-card .chip-row .chip:hover{background:var(--navy);color:var(--white);}
 
@@ -214,6 +226,20 @@
   .cert-card .cseal{width:34px;height:34px;border-radius:50%;background:var(--navy-deep);color:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-size:15px;margin-bottom:16px;}
   .cert-card h4{font-size:15.5px;font-weight:600;color:var(--navy-deep);margin-bottom:6px;line-height:1.35;}
   .cert-card span{font-size:13px;color:var(--slate);}
+
+  /* UI/UX DESIGN */
+  .design-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .design-card{
+    background:var(--white);border:1px solid var(--line);border-radius:16px;padding:30px;
+    transition:all .22s ease;
+  }
+  .design-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 18px 38px -20px rgba(15,42,71,0.22);}
+  .design-card .dnum{
+    display:block;font-family:'JetBrains Mono',monospace;font-size:11.5px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;
+  }
+  .design-card h3{font-size:18.5px;font-weight:600;margin-bottom:8px;line-height:1.3;}
+  .design-card p{color:var(--slate);font-size:14.5px;}
 
   /* FOOTER / CONTACT */
   .cta-section{background:var(--navy-deep);border-radius:28px;padding:70px 48px;text-align:center;position:relative;overflow:hidden;}
@@ -249,6 +275,7 @@
     .wrap{padding:0 22px;}
     .skills-wrap{padding:36px 24px;}
     .cert-grid{grid-template-columns:1fr;}
+    .design-grid{grid-template-columns:1fr;}
     .cta-section{padding:50px 24px;}
   }
 </style>
@@ -263,6 +290,7 @@
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#design">Design</a>
       <a href="#education">Education</a>
       <a href="mailto:imvaishnavi02@email.com" class="cta">Hire Me ↗</a>
     </div>
@@ -273,9 +301,9 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">AI & Data Science · Web Developer · Mumbai</span>
+      <span class="eyebrow">Backend &amp; Full-Stack Developer · UI/UX Designer · Mumbai</span>
       <h1 class="hero-name">Vaishnavi<br><em>Mohe</em></h1>
-      <p class="hero-lede">I turn raw data and rough ideas into interfaces and insights that work — AI-assisted web development, Python-driven analytics, and interfaces people actually enjoy using.</p>
+      <p class="hero-lede">Backend-focused developer who builds and ships end-to-end applications: REST APIs in Python/FastAPI, database and authentication layers, and ML/LLM model integration, deployed with Docker. I also design the interfaces around them — wireframes, user flows and clean responsive UI in Figma.</p>
       <div class="hero-cta">
         <a href="#experience" class="btn btn-primary">See my work ↓</a>
         <a href="mailto:imvaishnavi02@email.com" class="btn btn-ghost">Let's talk</a>
@@ -318,13 +346,13 @@
         <span class="eyebrow">About Me</span>
         <h2 style="margin-top:14px;">Who am I, really?</h2>
         <div class="about-text" style="margin-top:22px;">
-          <p>I'm Vaishnavi — an AI & Data Science student from Mumbai with a genuine love for turning messy data into meaningful stories, and clean code into interfaces people enjoy. I completed my Diploma in Computer Science & Engineering at Siddhivinayak Technical Campus, Shegaon, before moving into my <strong>B.E. in Artificial Intelligence & Data Science</strong> at N.Y.S.S. Datta Meghe College of Engineering, Airoli.</p>
-          <p>Alongside my data work, I've spent time building real, responsive interfaces — as a <strong>Web Developer Intern at Kaisecure</strong> and earlier managing websites and ad campaigns at <strong>Adsassure</strong>. That mix of frontend craft and analytical thinking is where I do my best work: I've built a full end-to-end AI analytics platform, a Voice of Customer Intelligence system that uses deep learning and NLP to analyse real customer calls and surface business KPIs.</p>
-          <p>I'm actively looking for a data analyst, AI developer, or frontend role where I can contribute, learn, and grow fast.</p>
+          <p>I'm Vaishnavi — a backend-focused developer and UI/UX designer from Mumbai who likes building the part of a product people never see but always feel: the API, the database, the auth layer, the model behind the prediction. I'm completing my <strong>B.E. in Artificial Intelligence &amp; Data Science</strong> at N.Y.S.S. Datta Meghe College of Engineering, Airoli, after a Diploma in Computer Science &amp; Engineering from Siddhivinayak Technical Campus, Shegaon. My core stack is Python, FastAPI and SQL.</p>
+          <p>I've shipped a full AI health platform (<strong>ArogyaAI</strong>) with a FastAPI backend, an EfficientNetB0 image classifier, Google Gemini integration, Firebase auth and Docker deployment — delivered with a React + TypeScript front end by a 4-member team. I've also built an end-to-end voice analytics pipeline with <strong>Whisper AI, BERT and Power BI</strong>.</p>
+          <p>I care about request validation, clean database integration and products that actually work in the real world — and I design the screens too, using <strong>Figma</strong> for wireframes, user flows and responsive UI, so the product feels as considered as it functions. I'm looking for a backend, full-stack or UI/UX role where I can contribute and grow fast.</p>
         </div>
         <div class="badge-row">
-          <span class="badge">Open to Internships</span>
-          <span class="badge">Open to Full-time Roles</span>
+          <span class="badge">Open to Backend &amp; Full-Stack Roles</span>
+          <span class="badge">Open to UI/UX Roles</span>
           <span class="badge">Based in Mumbai</span>
         </div>
       </div>
@@ -339,30 +367,57 @@
       <h2 style="margin-top:14px;margin-bottom:36px;">What I build with</h2>
 
       <div class="skill-cat">
-        <span class="cat-label">Data & AI</span>
+        <span class="cat-label">Backend</span>
         <div class="chip-row">
-          <span class="chip">Python</span><span class="chip">SQL / MySQL</span><span class="chip">Pandas</span>
-          <span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">TensorFlow</span>
-          <span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">CNN</span>
-          <span class="chip">BERT NLP</span><span class="chip">Whisper AI</span><span class="chip">MFCC</span>
-          <span class="chip">EDA</span><span class="chip">ETL</span><span class="chip">Data Mining</span>
+          <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Uvicorn</span>
+          <span class="chip">REST API Design</span><span class="chip">Request Validation</span>
+          <span class="chip">JWT / OAuth</span><span class="chip">Node.js (basic)</span>
         </div>
       </div>
 
       <div class="skill-cat">
-        <span class="cat-label">Frontend & Web</span>
+        <span class="cat-label">Databases &amp; Cloud</span>
         <div class="chip-row">
-          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript (ES6+)</span>
-          <span class="chip">React (basic)</span><span class="chip">Responsive Design</span><span class="chip">Flexbox / Grid</span>
-          <span class="chip">Figma</span><span class="chip">Accessibility (WCAG)</span><span class="chip">AI-Assisted Development</span>
+          <span class="chip">SQL</span><span class="chip">Firebase Auth</span><span class="chip">Firestore</span>
+          <span class="chip">Cloud Storage</span><span class="chip">Database Integration</span>
+          <span class="chip">ETL Processes</span><span class="chip">Cloud Computing</span>
         </div>
       </div>
 
       <div class="skill-cat">
-        <span class="cat-label">Visualization & Tools</span>
+        <span class="cat-label">AI / ML</span>
         <div class="chip-row">
-          <span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">Data Visualization</span>
-          <span class="chip">Data Cleaning</span><span class="chip">Canva</span>
+          <span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">TFLite</span>
+          <span class="chip">CNN (EfficientNetB0)</span><span class="chip">Google Gemini API</span>
+          <span class="chip">Whisper AI</span><span class="chip">BERT NLP</span>
+          <span class="chip">Pandas</span><span class="chip">NumPy</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <span class="cat-label">DevOps &amp; Tools</span>
+        <div class="chip-row">
+          <span class="chip">Docker</span><span class="chip">Git / GitHub</span>
+          <span class="chip">Postman</span><span class="chip">AI-Assisted Development Tools</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <span class="cat-label">Frontend &amp; Analytics</span>
+        <div class="chip-row">
+          <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">HTML5</span>
+          <span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span>
+          <span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <span class="cat-label">UI/UX &amp; Design</span>
+        <div class="chip-row">
+          <span class="chip">Figma</span><span class="chip">Wireframing</span><span class="chip">Prototyping</span>
+          <span class="chip">User Flows</span><span class="chip">Design Systems</span>
+          <span class="chip">Responsive Design</span><span class="chip">Accessibility</span>
+          <span class="chip">Usability Testing</span>
         </div>
       </div>
     </div>
@@ -379,21 +434,19 @@
       <div class="tl-item">
         <div class="tl-meta">APR 2026 — JUL 2026 · REMOTE · 90-DAY PAID INTERNSHIP</div>
         <h3>Web Developer Intern</h3>
-        <span class="org">Kaisecure</span>
+        <span class="org">Kalsecure</span>
         <ul>
-          <li>Completed a 90-day paid internship as a Web Developer, contributing to live projects and earning recognition for professional excellence, integrity, and teamwork.</li>
-          <li>Built and maintained functional, user-friendly web pages using HTML5, CSS3, JavaScript, and responsive design principles.</li>
-          <li>Collaborated with the team on real-world development tasks, translating requirements into working front-end features.</li>
+          <li>Completed a 90-day paid internship on live web projects; recognised for professional excellence, integrity and teamwork.</li>
+          <li>Translated requirements into working features using HTML5, CSS3 and JavaScript while collaborating with the team.</li>
         </ul>
       </div>
       <div class="tl-item">
-        <div class="tl-meta">2022 · 1 YEAR · PAID POSITION</div>
-        <h3>Website & Ads Management Executive</h3>
-        <span class="org">Adsassure</span>
+        <div class="tl-meta">2022 · WEBSITE &amp; ADS MANAGEMENT</div>
+        <h3>Website &amp; Ads Management Executive</h3>
+        <span class="org">Adassure</span>
         <ul>
-          <li>Managed and updated company websites, ensuring content accuracy, uptime, and a consistent user experience.</li>
-          <li>Handled end-to-end management of website advertising campaigns — setup, monitoring, and performance tracking.</li>
-          <li>Administered the company's admin/back-end portal, managing user access, content updates, and routine site operations.</li>
+          <li>Administered the company admin/back-end portal (user access, content updates, routine site operations) and managed website uptime and content accuracy.</li>
+          <li>Ran end-to-end website advertising campaigns: setup, monitoring and performance tracking.</li>
         </ul>
       </div>
     </div>
@@ -409,25 +462,69 @@
 
     <div class="proj-card reveal">
       <div class="proj-top">
-        <h3>Voice of Customer Intelligence Platform</h3>
-        <span class="proj-year">2025</span>
+        <h3>ArogyaAI: AI Skin Disease Detection &amp; Health Guidance Platform</h3>
+        <span class="proj-year">2026</span>
       </div>
-      <p>An end-to-end analytics system that transforms customer call recordings into actionable business intelligence — using Whisper AI for speech-to-text, a Speech Emotion Recognition model built with MFCC features and deep learning, and BERT-based NLP for sentiment analysis. A structured SQL dataset powers KPI analytics — CSAT, negative call rate, and risk detection — visualised in an interactive Power BI dashboard.</p>
+      <a class="proj-link" href="https://github.com/vaishumohe/Arogya_AI" target="_blank" rel="noopener">↗ github.com/vaishumohe/Arogya_AI</a>
+      <ul>
+        <li>Built the <strong>FastAPI backend</strong> that receives uploaded or webcam skin images, validates and preprocesses them, and routes requests to the ML model or the Gemini LLM before returning predictions and recommendations.</li>
+        <li>Integrated an <strong>EfficientNetB0</strong> (TensorFlow/Keras, TFLite) classifier that predicts skin conditions across <strong>22 categories</strong>.</li>
+        <li>Integrated <strong>Google Gemini</strong> to generate personalised Ayurvedic and dermatology-based guidance, diet plans, and a skincare chat assistant.</li>
+        <li>Implemented email and Google <strong>OAuth authentication with Firebase</strong>, storing user profiles, history and progress in Firestore and uploaded images in Cloud Storage.</li>
+        <li>Containerised the application with <strong>Docker</strong>; delivered as a 4-member team project with a React + TypeScript + Tailwind client.</li>
+      </ul>
       <div class="chip-row">
-        <span class="chip">Python</span><span class="chip">Whisper AI</span><span class="chip">BERT NLP</span>
-        <span class="chip">Deep Learning</span><span class="chip">MFCC</span><span class="chip">SQL</span><span class="chip">Power BI</span>
+        <span class="chip">Python 3.11</span><span class="chip">FastAPI</span><span class="chip">Uvicorn</span>
+        <span class="chip">TensorFlow / Keras</span><span class="chip">Google Gemini</span>
+        <span class="chip">Firebase</span><span class="chip">React</span><span class="chip">TypeScript</span>
+        <span class="chip">Docker</span>
       </div>
     </div>
 
     <div class="proj-card reveal">
       <div class="proj-top">
-        <h3>Portfolio Website & UI Component Library</h3>
+        <h3>Voice of Customer Intelligence Platform</h3>
         <span class="proj-year">2025</span>
       </div>
-      <p>A fully responsive personal site built from scratch with semantic HTML5 and modern CSS3 — Flexbox and Grid layouts, a reusable component library (buttons, cards, modals, nav, forms) with smooth animations, mobile-first layouts, and WCAG accessibility throughout.</p>
+      <ul>
+        <li>Built an end-to-end pipeline that transcribes customer call recordings with <strong>Whisper AI</strong> and stores structured text for analysis in <strong>SQL</strong>.</li>
+        <li>Trained a <strong>Speech Emotion Recognition</strong> model (MFCC + deep learning) for angry/happy/sad/neutral, and ran <strong>BERT sentiment analysis</strong> to surface CSAT, negative-call rate and risk signals.</li>
+        <li>Developed the <strong>Power BI dashboard</strong> visualising sentiment trends, emotion distribution and CSAT metrics.</li>
+      </ul>
       <div class="chip-row">
-        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
-        <span class="chip">Responsive Design</span><span class="chip">AI-Assisted Development</span>
+        <span class="chip">Python</span><span class="chip">Whisper AI</span><span class="chip">BERT</span>
+        <span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Deep Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">UI/UX Design</span>
+      <h2>Designing the interface, not just the API</h2>
+    </div>
+    <div class="design-grid reveal">
+      <div class="design-card">
+        <span class="dnum">01 — Structure</span>
+        <h3>Wireframes &amp; User Flows</h3>
+        <p>Turning requirements into clear screen-by-screen flows, so every state and edge case is decided before development starts.</p>
+      </div>
+      <div class="design-card">
+        <span class="dnum">02 — Prototype</span>
+        <h3>Prototyping in Figma</h3>
+        <p>Component-based layouts and clickable prototypes in Figma, used to test ideas quickly and hand off clean specs to the front end.</p>
+      </div>
+      <div class="design-card">
+        <span class="dnum">03 — System</span>
+        <h3>Design Systems &amp; Responsive UI</h3>
+        <p>Reusable buttons, cards, forms and type scales that stay consistent from mobile to desktop — built with Tailwind CSS and CSS Grid.</p>
+      </div>
+      <div class="design-card">
+        <span class="dnum">04 — Access</span>
+        <h3>Accessibility &amp; Usability</h3>
+        <p>Readable contrast, keyboard-friendly interactions and simple, low-friction flows so more people can actually use the product.</p>
       </div>
     </div>
   </div>
@@ -442,22 +539,15 @@
     <div class="reveal">
       <div class="edu-item">
         <div>
-          <h3>B.E. — Artificial Intelligence & Data Science (AIDS)</h3>
-          <div class="org">N.Y.S.S. Datta Meghe College of Engineering, Airoli, Thane · Expected 2027</div>
+          <h3>B.E. — Artificial Intelligence &amp; Data Science (AIDS)</h3>
+          <div class="org">N.Y.S.S. Datta Meghe College of Engineering, Airoli · Expected 2027</div>
         </div>
-        <span class="edu-stat">CGPA 7.96 / 10</span>
+        <span class="edu-stat">CGPA 8.3 / 10</span>
       </div>
       <div class="edu-item">
         <div>
-          <h3>Diploma — Computer Science & Engineering</h3>
+          <h3>Diploma — Computer Science &amp; Engineering</h3>
           <div class="org">Siddhivinayak Technical Campus, Shegaon</div>
-        </div>
-        <span class="edu-stat">75%</span>
-      </div>
-      <div class="edu-item">
-        <div>
-          <h3>SSC — Secondary School (10th)</h3>
-          <div class="org">Shri A.K. National High School & Junior College</div>
         </div>
         <span class="edu-stat">75%</span>
       </div>
@@ -472,12 +562,12 @@
       <h2>Credentials</h2>
     </div>
     <div class="cert-grid reveal">
+      <div class="cert-card"><div class="cseal">◆</div><h4>AI Careers for Women Workshop</h4><span>Workshop Certificate</span></div>
       <div class="cert-card"><div class="cseal">◆</div><h4>Power BI</h4><span>Microsoft</span></div>
-      <div class="cert-card"><div class="cseal">◆</div><h4>Data Analytics Job Simulation</h4><span>Forage</span></div>
+      <div class="cert-card"><div class="cseal">◆</div><h4>Data Analytics Job Simulation</h4><span>Certification</span></div>
       <div class="cert-card"><div class="cseal">◆</div><h4>Cloud Computing (Foundational)</h4><span>Certification</span></div>
-      <div class="cert-card"><div class="cseal">◆</div><h4>Web Developer Internship Certificate</h4><span>Kaisecure · Jul 2026</span></div>
-      <div class="cert-card"><div class="cseal">◆</div><h4>Website & Ads Management Internship Certificate</h4><span>Adsassure · 2022</span></div>
-      <div class="cert-card"><div class="cseal">◆</div><h4>Canva for Graphics Design & Video Editing Masterclass</h4><span>Udemy · 5.5 hrs</span></div>
+      <div class="cert-card"><div class="cseal">◆</div><h4>Web Developer Internship Certificate</h4><span>Kalsecure · 2026</span></div>
+      <div class="cert-card"><div class="cseal">◆</div><h4>Website &amp; Ads Management Internship Certificate</h4><span>Adassure · 2022</span></div>
     </div>
   </div>
 </section>
@@ -487,7 +577,7 @@
     <div class="cta-section reveal">
       <span class="eyebrow" style="color:var(--gold-soft);">Open to Opportunities</span>
       <h2>Let's build something together.</h2>
-      <p>Looking for a data analyst, AI developer, or frontend internship/role — always happy to talk shop over email or WhatsApp.</p>
+      <p>Looking for a backend, full-stack or UI/UX role — always happy to talk shop over email or WhatsApp.</p>
       <div class="hero-cta">
         <a href="mailto:imvaishnavi02@email.com" class="btn btn-primary">Email Me</a>
         <a href="https://wa.me/918379989912" class="btn btn-ghost">WhatsApp</a>
